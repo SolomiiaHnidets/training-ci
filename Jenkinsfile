@@ -1,7 +1,7 @@
 pipeline {
   agent {
     node {
-      label 'instance-1'
+      label 'master'
     }
 
   }
@@ -20,7 +20,7 @@ pipeline {
     stage('Run App') {
       steps {
         dir(path: 'flask-app') {
-          sh 'docker-compose up -d --build'
+          sh 'docker-compose down'
         }
 
       }
