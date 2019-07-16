@@ -36,5 +36,11 @@ docker-compose down'''
 
       }
     }
+    stage('Archive JUnit-formatted test results') {
+      steps {
+        junit(allowEmptyResults: true, testResults: 'flask-app/junit-report/report.xml')
+        sh 'sudo rm -rf flask-app/junit-report'
+      }
+    }
   }
 }
