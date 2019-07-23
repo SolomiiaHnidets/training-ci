@@ -130,7 +130,6 @@ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.0/docker-
 
 sudo chmod +x /usr/local/bin/docker-compose
 ```
-
 10. Install Java on Jenkins slave
 
 ```
@@ -141,7 +140,6 @@ sudo apt-get install openjdk-8-jre -y
 
   * Manage Jenkins --> Manage Nodes --> New Node -->
   fill in the required fields
-
 
 12. Open BlueOcean Pipeline and change label to 'slave'
 
