@@ -9,7 +9,8 @@
 cd jenkins;
 docker-compose up -d
 ```
-
+ 
+ 
 3. Open Jenkins URL
 ```
 http://127.0.0.1:8080
